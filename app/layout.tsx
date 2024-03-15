@@ -7,6 +7,9 @@ import { ReactNode } from "react";
 export const metadata: Metadata = {
   title: appTitle(),
   description: "Full-Stack Developer",
+  alternates: {
+    canonical: process.env.NEXT_PUBLIC_META_CANONICAL,
+  },
 };
 
 export const viewport: Viewport = {
