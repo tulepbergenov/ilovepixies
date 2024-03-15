@@ -1,3 +1,4 @@
+import { Providers } from "@/_app/providers";
 import "@/_app/styles/index.css";
 import { appTitle } from "@/_shared/lib";
 import type { Metadata, Viewport } from "next";
@@ -21,11 +22,13 @@ const RootLayout = ({
   return (
     <html lang="en" className="h-full !scroll-smooth">
       <body className="rendering-speed h-full bg-white text-base font-normal text-black antialiased">
-        <div className="flex min-h-full flex-col overflow-hidden">
-          <main id="main" className="flex-auto">
-            {children}
-          </main>
-        </div>
+        <Providers>
+          <div className="flex min-h-full flex-col overflow-hidden">
+            <main id="main" className="flex-auto">
+              {children}
+            </main>
+          </div>
+        </Providers>
       </body>
     </html>
   );
