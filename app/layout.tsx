@@ -1,7 +1,7 @@
+import "@/_app/styles/index.css";
 import { appTitle } from "@/_shared/lib";
 import type { Metadata, Viewport } from "next";
 import { ReactNode } from "react";
-import "@/_app/styles/index.css";
 
 export const metadata: Metadata = {
   title: appTitle(),
