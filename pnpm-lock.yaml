@@ -79,6 +79,9 @@ devDependencies:
   tailwindcss:
     specifier: ^3.3.0
     version: 3.4.1
+  tailwindcss-text-rendering:
+    specifier: ^1.0.2
+    version: 1.0.2
   typescript:
     specifier: ^5
     version: 5.4.2
@@ -3674,6 +3677,10 @@ packages:
       slice-ansi: 4.0.0
       string-width: 4.2.3
       strip-ansi: 6.0.1
+    dev: true
+
+  /tailwindcss-text-rendering@1.0.2:
+    resolution: {integrity: sha512-KVEfQDvSXPqiwdzFJVuv+csxjVDy1yvcXX3rGaUQlTcsmS3SBXFBNkus1Foa7S0EQ8ZpnLCnakrjMSIyL1kCAw==}
     dev: true
 
   /tailwindcss@3.4.1:

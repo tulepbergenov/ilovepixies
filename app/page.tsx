@@ -8,9 +8,13 @@ export const metadata: Metadata = {
 const Home = () => {
   return (
     <section>
-      <header>
-        <h1>Hello World</h1>
-      </header>
+      <div className="container">
+        <div>
+          <header>
+            <h1>Hello World</h1>
+          </header>
+        </div>
+      </div>
     </section>
   );
 };
