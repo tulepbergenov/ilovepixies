@@ -20,8 +20,8 @@ const RootLayout = ({
   children: ReactNode;
 }>) => {
   return (
-    <html lang="en" className="h-full !scroll-smooth">
-      <body className="rendering-speed h-full bg-white text-base font-normal text-black antialiased">
+    <html lang="en" className="h-full !scroll-smooth" suppressHydrationWarning>
+      <body className="rendering-speed h-full bg-white text-base font-normal text-black antialiased dark:bg-black dark:text-white">
         <Providers>
           <div className="flex min-h-full flex-col overflow-hidden">
             <main id="main" className="flex-auto">

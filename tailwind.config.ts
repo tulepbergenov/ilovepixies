@@ -2,6 +2,8 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: ["./app/**/*.{js,ts,jsx,tsx,mdx}", "./src/**/*.{js,ts,jsx,tsx,mdx}"],
+  // eslint-disable-next-line quotes
+  darkMode: ["class", '[data-theme="dark"]'],
   theme: {
     extend: {},
     container: {
