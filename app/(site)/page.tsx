@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <section>
       <div className="container">
-        <div>
+        <div className="py-10">
           <header className="sr-only">
             <h1>Daulet Tulepbergenov | Full-Stack Developer</h1>
           </header>

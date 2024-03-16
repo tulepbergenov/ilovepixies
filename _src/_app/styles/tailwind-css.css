@@ -11,15 +11,24 @@
     color-scheme: light;
   }
 
-  body::-webkit-scrollbar {
-    @apply w-2;
+  html.lenis,
+  html.lenis body {
+    height: auto;
   }
 
-  body::-webkit-scrollbar-thumb {
-    @apply rounded bg-blue-500;
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
   }
 
-  body::-webkit-scrollbar-track {
-    @apply bg-transparent;
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  .lenis.lenis-scrolling iframe {
+    pointer-events: none;
   }
 }
