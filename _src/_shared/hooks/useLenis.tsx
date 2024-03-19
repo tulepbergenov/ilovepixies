@@ -9,6 +9,7 @@ export const useLenis = () => {
 
     const raf = (time: number) => {
       lenis.raf(time);
+
       requestAnimationFrame(raf);
     };
 
